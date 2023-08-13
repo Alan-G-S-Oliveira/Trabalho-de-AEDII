@@ -13,5 +13,7 @@ int main(){
     if(fi != NULL)
         exit(1);
 
+    fclose(fi);
+
     return 0;
 }
