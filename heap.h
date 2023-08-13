@@ -1,14 +1,21 @@
 #ifndef HEAP_H_INCLUDED
 #define HEAP_H_INCLUDED
 
+struct passageiro{
+
+    int id;
+    int idade;
+    char nome[50];
+    char planeta[50];
+
+};
+
 struct nave{
 
     char nome[50];
     char tipo[50];
-    char planeta[50];
-    int suprimentos;
-    int passageiros;
-
+    char suprimentos[3][50];
+    struct passageiro alien[3];
     int prioridade;
 
 };
@@ -23,6 +30,7 @@ struct lista{
 
 typedef struct nave Nave;
 typedef struct lista Lista;
+typedef struct passageiro Passageiro;
 
 Lista *cria_lista(int tamanho);
 

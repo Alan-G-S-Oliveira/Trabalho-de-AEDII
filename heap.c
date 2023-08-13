@@ -21,6 +21,7 @@ Lista *cria_lista(int tamanho){
 
 void apaga_lista(Lista *li){
 
+    free(li -> star);
     free(li);
 
 }
