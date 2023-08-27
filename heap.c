@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include <math.h>
 #include "heap.h"
 
@@ -159,5 +160,28 @@ void descer_heap(Lista *li, int i){
         }
 
     }
+
+}
+
+void define_prioridade(Nave *pri, int x1, int x2){
+
+    float prioridade, x;
+
+    x = (float)x1 / x2;
+
+    prioridade = (float)((pri -> alien[0].idade + pri -> alien[1].idade + pri -> alien[2].idade) / 3);
+    prioridade = (float)(prioridade * x);
+
+
+    if(!strcmp("Ambulância", pri -> tipo))
+        pri -> prioridade = floor(prioridade * 0.9);
+    else if(!strcmp("Refugiados", pri -> tipo))
+        pri -> prioridade = floor(prioridade * 0.8);
+    else if(!strcmp("Cargas", pri -> tipo))
+        pri -> prioridade = floor(prioridade * 0.7);
+    else if(!strcmp("Policial", pri -> tipo))
+        pri -> prioridade = floor(prioridade * 0.6);
+    else
+        pri -> prioridade = floor(prioridade * 0.5);
 
 }

@@ -54,4 +54,6 @@ void subir_heap(Lista *li, int i);
 
 void descer_heap(Lista *li, int i);
 
+void define_prioridade(Nave *pri, int x1, int x2);
+
 #endif // HEAP_H_INCLUDED

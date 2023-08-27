@@ -2,19 +2,25 @@
 #include <stdlib.h>
 #include <string.h>
 #include <locale.h>
+#include <time.h>
 #include <math.h>
 #include "heap.h"
 
 int main(){
 
-    setlocale(LC_ALL, "portuguese");
+    srand(time(NULL));
+    setlocale(LC_ALL, "Portuguese");
 
     char linha[250];
     char aux[8];
-    int i, prioridade;
+    int i, x1, x2, n, menu, prioridade;
     Lista *li;
     FILE *fi;
-    Nave adc, nm;
+    Nave adc, consulta;
+
+    printf("Digite o tamanho da lista: ");
+    scanf("%d", &n);
+    fflush(stdin);
 
     li = cria_lista(60);
 
@@ -26,6 +32,7 @@ int main(){
     fgets(linha, 250, fi);
 
     while(fgets(linha, 250, fi) != NULL){
+
         strcpy(adc.nome, strtok(linha, ","));
         strcpy(adc.tipo, strtok(NULL, ","));
 
@@ -46,34 +53,73 @@ int main(){
         for(i = 0; i < 3; i++)
             strcpy(adc.suprimentos[i], strtok(NULL, ","));
 
-        prioridade = floor((adc.alien[0].idade + adc.alien[1].idade + adc.alien[2].idade) / 3);
 
-        if(!strcmp("Ambulância", adc.tipo))
-            adc.prioridade = floor(prioridade * 0.9);
-        else if(!strcmp("Refugiados", adc.tipo))
-            adc.prioridade = floor(prioridade * 0.8);
-        else if(!strcmp("Cargas", adc.tipo))
-            adc.prioridade = floor(prioridade * 0.7);
-        else if(!strcmp("Policial", adc.tipo))
-            adc.prioridade = floor(prioridade * 0.6);
-        else
-            adc.prioridade = floor(prioridade * 0.5);
+        x1 = 1;
+        x2 = 1;
 
+        define_prioridade(&adc, x1, x2);
         adc_lista(li, adc);
 
     }
 
     cria_heap(li);
 
-    consulta_heap(li, &nm);
+    do{
 
-    printf("Nave: %s.\nTipo: %s.\nPriodidade: %d.\n\n", nm.nome, nm.tipo, nm.prioridade);
+        printf("Digite:\n1 - Adcionar Nave.\n2 - Remover Nave.\n3 - Sair.\n\n");
+        scanf("%d", &menu);
+        fflush(stdin);
 
-    remove_heap(li);
+        system("cls");
 
-    consulta_heap(li, &nm);
+        switch(menu){
 
-    printf("Nave: %s.\nTipo: %s.\nPriodidade: %d.\n\n", nm.nome, nm.tipo, nm.prioridade);
+            case 1:
+                printf("fds");
+
+                break;
+            case 2:
+
+                n = rand() % 10;
+
+                consulta_heap(li, &consulta);
+
+                if(n == 0){
+
+                    x1 = (rand() % 5) + 1;
+                    x2 = (rand() % 5) + 1;
+
+                    define_prioridade(&consulta, x1, x2);
+                    altera_prioridade(li, 0, consulta.prioridade);
+
+                    printf("Detectamos uma erro no cálculo da prioridade, portanto, não realizamos a remoção da nave por questões de segurança.\n");
+
+                }else{
+
+                    remove_heap(li);
+                    printf("Nome da nave: %s.\nTipo da nave: %s.\nPrioridade da nave: %d.\n", consulta.nome, consulta.tipo, consulta.prioridade);
+                    printf("\nPassageiros:\n");
+                    for(i = 0; i < 3; i++){
+
+                        printf("Nome: %s.\nPlaneta de origem: %s.\n", consulta.alien[i].nome, consulta.alien[i].planeta);
+                        printf("Idade: %d.\nIdentificação: %d.\n\n", consulta.alien[i].idade, consulta.alien[i].id);
+
+                    }
+
+                    printf("Suprimentos: ");
+                    for(i = 0; i < 3; i++){
+
+                        if(i < 2)
+                            printf("%s, ", consulta.suprimentos[i]);
+                        else
+                            printf("%s", consulta.suprimentos[i]);
+                    }
+                    printf(".");
+
+                }
+        }
+
+    }while(menu != 3);
 
     apaga_lista(li);
     fclose(fi);
