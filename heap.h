@@ -1,25 +1,6 @@
 #ifndef HEAP_H_INCLUDED
 #define HEAP_H_INCLUDED
 
-struct passageiro{
-
-    int id;
-    int idade;
-    char nome[50];
-    char planeta[50];
-
-};
-
-struct nave{
-
-    char nome[50];
-    char tipo[50];
-    char suprimentos[3][50];
-    struct passageiro alien[3];
-    int prioridade;
-
-};
-
 struct lista{
 
     int qtd;

@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <locale.h>
+#include <windows.h>
 #include <time.h>
-#include <math.h>
 #include "heap.h"
+#include "naves.h"
 
 int main(){
 
@@ -13,7 +14,7 @@ int main(){
 
     char linha[250];
     char aux[8];
-    int i, x1, x2, n, menu, prioridade;
+    int i, j, x1, x2, n, menu, prioridade;
     Lista *li;
     FILE *fi;
     Nave adc, consulta;
@@ -22,7 +23,7 @@ int main(){
     scanf("%d", &n);
     fflush(stdin);
 
-    li = cria_lista(60);
+    li = cria_lista(n);
 
     fi = fopen("naves.csv", "r");
 
@@ -32,6 +33,8 @@ int main(){
     fgets(linha, 250, fi);
 
     while(fgets(linha, 250, fi) != NULL){
+
+        corrige_string(linha);
 
         strcpy(adc.nome, strtok(linha, ","));
         strcpy(adc.tipo, strtok(NULL, ","));
@@ -58,7 +61,8 @@ int main(){
         x2 = 1;
 
         define_prioridade(&adc, x1, x2);
-        adc_lista(li, adc);
+        if(!adc_lista(li, adc))
+            break;
 
     }
 
@@ -75,7 +79,79 @@ int main(){
         switch(menu){
 
             case 1:
-                printf("fds");
+                printf("Digite o nome da nave: ");
+                fgets(adc.nome, 50, stdin);
+                corrige_string(adc.nome);
+                fflush(stdin);
+
+                do{
+
+                    system("cls");
+                    printf("Digite o tipo da nave:\n1 - Ambulância;\n2 - Refugiados;\n3 - Cargas;\n4 - Policial;\n5 - Viametro.\n");
+                    scanf("%d", &n);
+                    fflush(stdin);
+
+                } while(n < 1 || n > 5);
+
+                switch(n){
+
+                    case 1:
+                        strcpy(adc.tipo, "Ambulância");
+                        break;
+                    case 2:
+                        strcpy(adc.tipo, "Refugiados");
+                        break;
+                    case 3:
+                        strcpy(adc.tipo, "Cargas");
+                        break;
+                    case 4:
+                        strcpy(adc.tipo, "Policial");
+                        break;
+                    default:
+                        strcpy(adc.tipo, "Viametro");
+
+                }
+
+                for(i = 0; i < 3; i++){
+
+                    printf("Digite o nome do passageiro %d: ", i + 1);
+                    fgets(adc.alien[i].nome, 50, stdin);
+                    corrige_string(adc.alien[i].nome);
+                    fflush(stdin);
+
+                    printf("Digite a indentificação do passageiro %d: ", i + 1);
+                    scanf("%d", &adc.alien[i].id);
+                    fflush(stdin);
+
+                    printf("Digite a idade do passageiro %d: ", i + 1);
+                    scanf("%d", &adc.alien[i].idade);
+                    fflush(stdin);
+
+                    printf("Digite o planeta do passageiro %d: ", i + 1);
+                    fgets(adc.alien[i].planeta, 50, stdin);
+                    corrige_string(adc.alien[i].planeta);
+                    fflush(stdin);
+
+                }
+
+                for(i = 0; i < 3; i++){
+
+                    printf("Digite 0 para ver a lista de suprimentos ou digite de 1 a 25 para adcionar o item: ");
+                    scanf("%d", &n);
+                    fflush(stdin);
+
+                    if(n == 0)
+                        exibe_itens();
+                    //else
+                        //adc_itens(li, n);
+
+                }
+
+
+                if(adc_heap(li, adc))
+                    printf("Nave adcionada com sucesso!\n");
+                else
+                    printf("Não foi possível adcionar a nave!\n");
 
                 break;
             case 2:
@@ -92,7 +168,7 @@ int main(){
                     define_prioridade(&consulta, x1, x2);
                     altera_prioridade(li, 0, consulta.prioridade);
 
-                    printf("Detectamos uma erro no cálculo da prioridade, portanto, não realizamos a remoção da nave por questões de segurança.\n");
+                    printf("Detectamos um erro no cálculo da prioridade, portanto, não realizamos a remoção da nave por questões de segurança.\n");
 
                 }else{
 
@@ -114,7 +190,7 @@ int main(){
                         else
                             printf("%s", consulta.suprimentos[i]);
                     }
-                    printf(".");
+                    printf(".\n\n");
 
                 }
         }
@@ -123,6 +199,17 @@ int main(){
 
     apaga_lista(li);
     fclose(fi);
+
+    for(i = 0; i < 3; i++){
+        printf("Encerrando");
+        for(j = 0; j < 3; j++){
+
+            printf(".");
+            sleep(1);
+
+        }
+        system("cls");
+    }
 
     return 0;
 }

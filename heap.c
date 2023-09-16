@@ -2,6 +2,7 @@
 #include <string.h>
 #include <math.h>
 #include "heap.h"
+#include "naves.h"
 
 Lista *cria_lista(int tamanho){
 
