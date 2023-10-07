@@ -1,51 +1,51 @@
 Nave,Tipo,Passageiro_1,ID_1,Idade_1,Planeta_1,Passageiro_2,ID_2,Idade_2,Planeta_2,Passageiro_3,ID_3,Idade_3,Planeta_3,Suprimento_1,Suprimento_2,Suprimento_3
-Falcon 9,Policial,Zorblax,23567,1,Alpha Centauri b,Zogar,23501,341,Capella b,Vyxar,12345,237,Alphard e,Rubinita,Sopa Quarnix,Comunicador Gravitacional
-Soyuz,Cargas,Xylokrin,87492,48,Sirius b,Xandar,87411,127,Mintaka b,Kryzix,67890,49,Proxima Centauri a,Siderita,Macarrão Zorblat,Pulseira Quântica
-Space Shuttle,Ambulância,Velnor,10938,214,Proxima Centauri c,Vexlor,10922,255,Sirius c,Zandok,54321,128,Antares c,Ametrina,Gelato Cristalino,Óculos de Nebulosa
-Ariane 5,Refugiados,Quilrax,56781,382,Polaris b,Quixar,56738,4,Antares b,Grythar,98765,372,Vega f,Zircônio,Salada de Frutas da Nebulosa,Sapatos Movidos a Plasma
-Saturn V,Viametro,Plorath,34902,309,Betelgeuse e,Pallax,34987,74,Fomalhaut e,Plynor,23456,92,Sirius c,Aquamalita,Ensopado de Xylophor,Tradutor Intergaláctico
-H-IIA,Cargas,Ogrindor,62184,92,Vega d,Orgrim,62133,419,Sargas d,Zandor,78901,415,Aldebaran a,Lápis-verde,Pudim Plasmático,Holografador Holográfico
-Long March 5,Policial,Nylthor,45023,162,Canopus c,Nixar,45056,188,Rigel c,Xyrlak,45678,180,Sargas a,Titanita,Sushi Celestial,Mochila Cósmica
-Delta IV,Refugiados,Mordix,76312,448,Arcturus b,Marlix,76324,53,Vega e,Thralkor,89012,65,Altair c,Citrinita,Guisado Galáctico,Cristal de Energia Alienígena
-Atlas V,Ambulância,Liriana,89034,420,Sirius c,Lixara,89065,479,Polaris c,Vexlon,34567,309,Alphard f,Esmeraldita,Abacate Astral,Diário Galáctico
-Vega,Viametro,Kryzoth,12349,183,Antares a,Krazar,12376,236,Alphard f,Zolgrin,90123,473,Gacrux f,Galenita,Nachos Netunianos,Reprodutor de Música Interdimensional
-Falcon Heavy,Cargas,Jarnok,67890,276,Rigel b,Jorlak,67882,97,Hadar b,Myrnix,56789,82,Rigel a,Ônix,Quiche Quasar,Bússola da Luz das Estrelas
-Proton,Ambulância,Hylthar,54321,394,Deneb d,Hyndor,54398,311,Proxima Centauri c,Qyldor,43210,261,Canopus a,Cobaltita,Sorvete de Ejeção Solar,Caderno da Nebulosa
-Starship,Policial,Grivlak,98765,60,Altair e,Glorix,98723,161,Alpha Centauri b,Zylnor,87654,57,Bellatrix a,Calcirina,Wrap de Vegetais Venusianos,Óculos de Xenon-Xenon
-GSLV Mk III,Viametro,Felnor,56789,422,Altair e,Felora,56751,424,Canopus c,Vorand,21098,434,Aldebaran a,Cobrenita,Sorvete Ionizado,Bloco de Anotações Cósmicas
-Electron,Refugiados,Draxel,87654,135,Spica c,Dralok,87693,66,Gacrux d,Fylkarn,34568,148,Capella c,Pirita,Croutons Ciborgues,Dispositivo de Teletransporte
-PSLV,Cargas,Cylorin,34567,455,Sirius b,Crixan,34519,432,Zubeneschamali c,Zorvax,78902,392,Mintaka f,Azurita,Smoothie Saturniano,Inalador de Nebulizador
-Shenzhou,Ambulância,Steve,23456,40,Alpha Centauri b,Vicetim,23434,273,Aldebaran c,Roqueiro,12346,209,Sirius f,Brazinito,Trufa de Algas Alienígenas,Unhas Postiças que Desafiam a Gravidade
-Antares,Refugiados,Azulak,67812,289,Bellatrix f,Zylor,67877,95,Aldebaran c,Syldrak,56790,368,Regulus c,Cianita,Kebab Cósmico,Perfume Celestial
-New Shepard,Viametro,Zynthar,45678,357,Capella a,Zynthar,45654,183,Polaris c,Kryzara,90124,122,Alphard d,Quartinita,Maçã de Andrômeda,Relógio Alimentado por Fótons
-SLS,Policial,Vorkin,89012,91,Capella a,Vortix,89043,351,Capella f,Vylthor,23457,482,Hamal e,Ametina,Pirulito Lunar,Amuleto de Andrômeda
-Falcon 1,Cargas,Uthral,56734,34,Gacrux d,Ulixar,56788,140,Achernar c,Qyntok,67891,315,Polaris f,Magnesita,Muffin Marciano,Garrafa de Água Alienígena
-Zenit,Ambulância,Threxar,12356,464,Sargas e,Thralix,12378,200,Altair e,Zyndar,54322,76,Alpha Centauri f,Hematita,Sushi Interdimensional Inari,Carteira da Nebulosa
-Ariane 6,Refugiados,Sylvaris,90876,289,Zubeneschamali b,Slyndra,90892,89,Canopus d,Fyrnix,87655,292,Betelgeuse a,Obsidinata,Salada Exo,Caneta Interdimensional
-Delta II,Viametro,Ragnok,45632,197,Hamal d,Rylox,45672,458,Algieba b,Brolthar,21099,191,Alnilam a,Ferganita,Sashimi Luz das Estrelas,Pente Movido a Plasma
-Atlas Centaur,Policial,Qyndor,98701,376,Arcturus c,Quendak,98757,43,Arcturus c,Tyndak,45679,401,Alpha Centauri f,Topázio,Omelete Orbital,Colar da Nebulosa
-R-7,Cargas,Plixor,21345,123,Sargas e,Plaxis,21389,374,Betelgeuse f,Vyxara,89013,158,Proxima Centauri e,Zincolita,Udon UFO,Espelho de Mão da Nebulosa
-Titan II,Refugiados,Onyxen,65432,195,Proxima Centauri b,Orynd,65401,107,Hamal d,Grivon,12347,356,Canopus a,Jadeíta,Uvas da Gravidade,Mochila do Hiperespaço
-Linha 8,Viametro,Pedro Henrique,89056,13,Terra,Pedro Henrique,89076,21,Terra,Pedro Henrique,56791,11,Terra,Notebook,Notebook,Notebook
-Falcon 5,Policial,Myrlok,12789,269,Achernar d,Mylara,12709,366,Castor d,Jylnar,90125,444,Fomalhaut f,Siderazul,Grãos Intergalácticos,Cristais Alienígenas de Meditação
-GSLV Mk II,Ambulância,Kryndon,87601,88,Alnilam b,Kryndor,87612,21,Sargas e,Vylor,23458,62,Sirius a,Garnetita,Berinjela Éter,Luminária de Neutrinos
-Electron II,Cargas,Jorvax,90345,401,Mintaka b,Jornix,90326,307,Deneb d,Krandor,67892,276,Sargas f,Turmalina,Aspargo Aurora,Caderno da Estrela Viajante
-H-I,Viametro,Ithril,67856,113,Capella a,Ithran,67821,195,Alpha Centauri c,Xyntar,54323,499,Achernar f,Espinela,Waffles do Buraco de Minhoca,Auricular Telepático
-Long March 3B,Refugiados,Horkal,34521,98,Rigel b,Hylara,34567,292,Proxima Centauri f,Zandor,87656,137,Hamal c,Bismutina,Néctar da Nebulosa,Sapatos que Desafiam a Gravidade
-New Glenn,Policial,Gryndor,67809,226,Vega c,Gryndak,67823,112,Bellatrix f,Mylorn,21000,327,Castor f,Ônix,Pipoca Fóton,Dispensador de Petiscos Quânticos
-Vega C,Cargas,Fyndar,89021,146,Polaris b,Fyndra,89094,484,Alphard d,Zyndal,34569,73,Alphard e,Jaspalita,Fajitas de Fusão,Leitor Exo de E-books
-Ariane 4,Ambulância,Exynor,54390,61,Polaris b,Exylor,54367,36,Arcturus f,Zylorn,78903,285,Deneb a,Cuprita,Amaranto Alienígena,Câmera Celestial
-PSLV-XL,Viametro,Dylara,90872,282,Algieba a,Dylara,90865,251,Sirius d,Tylnor,12348,89,Hamal e,Calcita,Quinoa Quântica,Guarda-Chuva OVNI
-Tardis,Refugiados,Bustas,10987,441,Sargas c,Job,10902,415,Rigel c,Leandro,56792,220,Polaris f,Olivita,Panquecas de Plasma,Planejador da Nebulosa
-Soyuz 2,Cargas,Braxor,56723,491,Aldebaran b,Bralix,56710,180,Sirius c,Vykarn,90126,389,Rigel a,Feldspatita,Salsichas Solares,Cachecol Espaço-Tempo
-Zenit-3SL,Policial,Arlynd,43210,22,Aldebaran b,Arlox,43223,401,Sargas e,Xyrdok,23459,171,Capella c,Rodonita,Rolinhos de Repolho Cósmico,Óculos Exo
-Atlas II,Ambulância,Zyndra,89076,276,Regulus a,Zalara,89044,76,Alpha Centauri c,Fyndra,67893,419,Arcturus e,Cianita,Tofu de Teletransporte,Esmalte de Unhas da Nebulosa
-Delta III,Viametro,Vylthor,45678,179,Castor d,Vylar,45681,214,Polaris c,Zolgar,54324,25,Alpha Centauri f,Pirita,Pizza Planetária,Spinner Telecinético
-H-IIB,Cargas,Ugoroth,67890,38,Fomalhaut d,Uthrok,67829,490,Regulus b,Vylara,87657,442,Betelgeuse a,Lepidolita,Strudel de Fruta-Estrela,Diário Interdimensional
-Proton-M,Policial,Tylorin,21098,158,Canopus e,Tryndor,21013,133,Alpha Centauri c,Syldor,21001,104,Algieba c,Opalita,Wraps do Buraco de Minhoca,Colar da Nebulosa
-GSLV Mk I,Ambulância,Slyndar,78906,284,Hadar a,Sylara,78967,469,Alnilam c,Tyndra,34570,347,Alpha Centauri f,Sodalita,Nectarina Nova,Cobertor da Aurora Boreal
-Long March 4B,Refugiados,Rythor,56789,495,Alphard d,Rynak,56778,242,Betelgeuse f,Kryndar,78904,206,Zubeneschamali f,Benitonita,Cheesecake Celestial,Mochila Movida a Plasma
-Vega E,Viametro,Pylar,34567,52,Alphard e,Pylor,34529,127,Alphard f,Vorkal,12349,431,Sirius f,Cobrenita,Gumbo Galáctico,Brincos da Nebulosa
-Ariane 3,Cargas,Nythara,87654,492,Alpha Centauri a,Nythar,87645,34,Vega c,Zolthar,56793,67,Alphard e,Gessita,Macarrão da Nebulosa,Kit de Maquiagem Cósmica
-Vulcan Centaur,Policial,Myndok,13345,311,Betelgeuse f,Myndor,12360,312,Hamal b,Plandor,90127,309,Spica f,Cromonita,Enchiladas Exo,Escova Galáctica
-Titan IV,Refugiados,Kyndal,67891,231,Canopus b,Kyndra,67889,173,Spica c,Zandar,23460,93,Arcturus a,Fluorita,Pão de Milho Cósmico,Óculos Quasar
+Falcon 9,Policial,Zorblax,23567,1,Alpha Centauri b,Zogar,23501,341,Capella b,Vyxar,12345,237,Alphard e,3,1,0
+Soyuz,Cargas,Xylokrin,87492,48,Sirius b,Xandar,87411,127,Mintaka b,Kryzix,67890,49,Proxima Centauri a,5,2,0
+Space Shuttle,Ambulância,Velnor,10938,214,Proxima Centauri c,Vexlor,10922,255,Sirius c,Zandok,54321,128,Antares c,4,2,1
+Ariane 5,Refugiados,Quilrax,56781,382,Polaris b,Quixar,56738,4,Antares b,Grythar,98765,372,Vega f,0,5,3
+Saturn V,Viametro,Plorath,34902,309,Betelgeuse e,Pallax,34987,74,Fomalhaut e,Plynor,23456,92,Sirius c,1,4,2
+H-IIA,Cargas,Ogrindor,62184,92,Vega d,Orgrim,62133,419,Sargas d,Zandor,78901,415,Aldebaran a,0,2,5
+Long March 5,Policial,Nylthor,45023,162,Canopus c,Nixar,45056,188,Rigel c,Xyrlak,45678,180,Sargas a,3,5,4
+Delta IV,Refugiados,Mordix,76312,448,Arcturus b,Marlix,76324,53,Vega e,Thralkor,89012,65,Altair c,1,0,2
+Atlas V,Ambulância,Liriana,89034,420,Sirius c,Lixara,89065,479,Polaris c,Vexlon,34567,309,Alphard f,4,3,2
+Vega,Viametro,Kryzoth,12349,183,Antares a,Krazar,12376,236,Alphard f,Zolgrin,90123,473,Gacrux f,2,0,3
+Falcon Heavy,Cargas,Jarnok,67890,276,Rigel b,Jorlak,67882,97,Hadar b,Myrnix,56789,82,Rigel a,1,5,0
+Proton,Ambulância,Hylthar,54321,394,Deneb d,Hyndor,54398,311,Proxima Centauri c,Qyldor,43210,261,Canopus a,4,2,3
+Starship,Policial,Grivlak,98765,60,Altair e,Glorix,98723,161,Alpha Centauri b,Zylnor,87654,57,Bellatrix a,0,3,1
+GSLV Mk III,Viametro,Felnor,56789,422,Altair e,Felora,56751,424,Canopus c,Vorand,21098,434,Aldebaran a,5,1,4
+Electron,Refugiados,Draxel,87654,135,Spica c,Dralok,87693,66,Gacrux d,Fylkarn,34568,148,Capella c,2,1,0
+PSLV,Cargas,Cylorin,34567,455,Sirius b,Crixan,34519,432,Zubeneschamali c,Zorvax,78902,392,Mintaka f,3,5,1
+Shenzhou,Ambulância,Steve,23456,40,Alpha Centauri b,Vicetim,23434,273,Aldebaran c,Roqueiro,12346,209,Sirius f,0,4,1
+Antares,Refugiados,Azulak,67812,289,Bellatrix f,Zylor,67877,95,Aldebaran c,Syldrak,56790,368,Regulus c,3,1,4
+New Shepard,Viametro,Zynthar,45678,357,Capella a,Zynthar,45654,183,Polaris c,Kryzara,90124,122,Alphard d,5,0,3
+SLS,Policial,Vorkin,89012,91,Capella a,Vortix,89043,351,Capella f,Vylthor,23457,482,Hamal e,2,4,0
+Falcon 1,Cargas,Uthral,56734,34,Gacrux d,Ulixar,56788,140,Achernar c,Qyntok,67891,315,Polaris f,1,3,1
+Zenit,Ambulância,Threxar,12356,464,Sargas e,Thralix,12378,200,Altair e,Zyndar,54322,76,Alpha Centauri f,0,2,4
+Ariane 6,Refugiados,Sylvaris,90876,289,Zubeneschamali b,Slyndra,90892,89,Canopus d,Fyrnix,87655,292,Betelgeuse a,4,1,3
+Delta II,Viametro,Ragnok,45632,197,Hamal d,Rylox,45672,458,Algieba b,Brolthar,21099,191,Alnilam a,2,4,5
+Atlas Centaur,Policial,Qyndor,98701,376,Arcturus c,Quendak,98757,43,Arcturus c,Tyndak,45679,401,Alpha Centauri f,0,1,5
+R-7,Cargas,Plixor,21345,123,Sargas e,Plaxis,21389,374,Betelgeuse f,Vyxara,89013,158,Proxima Centauri e,5,3,2
+Titan II,Refugiados,Onyxen,65432,195,Proxima Centauri b,Orynd,65401,107,Hamal d,Grivon,12347,356,Canopus a,1,3,1
+Linha 8,Viametro,Pedro Henrique,89056,13,Terra,Pedro Henrique,89076,21,Terra,Pedro Henrique,56791,11,Terra,3,1,4
+Falcon 5,Policial,Myrlok,12789,269,Achernar d,Mylara,12709,366,Castor d,Jylnar,90125,444,Fomalhaut f,4,0,0
+GSLV Mk II,Ambulância,Kryndon,87601,88,Alnilam b,Kryndor,87612,21,Sargas e,Vylor,23458,62,Sirius a,2,5,5
+Electron II,Cargas,Jorvax,90345,401,Mintaka b,Jornix,90326,307,Deneb d,Krandor,67892,276,Sargas f,0,1,3
+H-I,Viametro,Ithril,67856,113,Capella a,Ithran,67821,195,Alpha Centauri c,Xyntar,54323,499,Achernar f,1,2,3
+Long March 3B,Refugiados,Horkal,34521,98,Rigel b,Hylara,34567,292,Proxima Centauri f,Zandor,87656,137,Hamal c,5,4,0
+New Glenn,Policial,Gryndor,67809,226,Vega c,Gryndak,67823,112,Bellatrix f,Mylorn,21000,327,Castor f,3,3,2
+Vega C,Cargas,Fyndar,89021,146,Polaris b,Fyndra,89094,484,Alphard d,Zyndal,34569,73,Alphard e,0,4,4
+Ariane 4,Ambulância,Exynor,54390,61,Polaris b,Exylor,54367,36,Arcturus f,Zylorn,78903,285,Deneb a,2,2,5
+PSLV-XL,Viametro,Dylara,90872,282,Algieba a,Dylara,90865,251,Sirius d,Tylnor,12348,89,Hamal e,4,5,4
+Tardis,Refugiados,Bustas,10987,441,Sargas c,Job,10902,415,Rigel c,Leandro,56792,220,Polaris f,1,0,1
+Soyuz 2,Cargas,Braxor,56723,491,Aldebaran b,Bralix,56710,180,Sirius c,Vykarn,90126,389,Rigel a,5,5,5
+Zenit-3SL,Policial,Arlynd,43210,22,Aldebaran b,Arlox,43223,401,Sargas e,Xyrdok,23459,171,Capella c,5,4,0
+Atlas II,Ambulância,Zyndra,89076,276,Regulus a,Zalara,89044,76,Alpha Centauri c,Fyndra,67893,419,Arcturus e,0,4,2
+Delta III,Viametro,Vylthor,45678,179,Castor d,Vylar,45681,214,Polaris c,Zolgar,54324,25,Alpha Centauri f,2,3,3
+H-IIB,Cargas,Ugoroth,67890,38,Fomalhaut d,Uthrok,67829,490,Regulus b,Vylara,87657,442,Betelgeuse a,1,2,0
+Proton-M,Policial,Tylorin,21098,158,Canopus e,Tryndor,21013,133,Alpha Centauri c,Syldor,21001,104,Algieba c,3,1,2
+GSLV Mk I,Ambulância,Slyndar,78906,284,Hadar a,Sylara,78967,469,Alnilam c,Tyndra,34570,347,Alpha Centauri f,0,0,5
+Long March 4B,Refugiados,Rythor,56789,495,Alphard d,Rynak,56778,242,Betelgeuse f,Kryndar,78904,206,Zubeneschamali f,4,2,1
+Vega E,Viametro,Pylar,34567,52,Alphard e,Pylor,34529,127,Alphard f,Vorkal,12349,431,Sirius f,3,5,4
+Ariane 3,Cargas,Nythara,87654,492,Alpha Centauri a,Nythar,87645,34,Vega c,Zolthar,56793,67,Alphard e,0,0,4
+Vulcan Centaur,Policial,Myndok,13345,311,Betelgeuse f,Myndor,12360,312,Hamal b,Plandor,90127,309,Spica f,1,3,5
+Titan IV,Refugiados,Kyndal,67891,231,Canopus b,Kyndra,67889,173,Spica c,Zandar,23460,93,Arcturus a,4,1,0

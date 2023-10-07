@@ -14,7 +14,7 @@ struct nave{
 
     char nome[50];
     char tipo[50];
-    char suprimentos[3][50];
+    int suprimentos[3];
     struct passageiro alien[3];
     int prioridade;
 

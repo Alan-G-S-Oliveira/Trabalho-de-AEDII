@@ -54,7 +54,7 @@ int main(){
         }
 
         for(i = 0; i < 3; i++)
-            strcpy(adc.suprimentos[i], strtok(NULL, ","));
+            adc.suprimentos[i] = atoi(strtok(NULL, ","));
 
 
         x1 = 1;
