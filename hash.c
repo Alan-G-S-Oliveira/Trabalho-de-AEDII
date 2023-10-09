@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "hash.h"
 
-LISTA *cria_lista(){
+LISTA *Cria_Lista(){
 
     LISTA *li = (LISTA *)malloc(sizeof(LISTA));
 
@@ -18,7 +18,7 @@ void Libera_Lista(LISTA *li){
 
 }
 
-int ordena_numeros(int x[]){
+int ordena_numeros(const int x[]){
 
     int i, menor, maior, meio;
     char aux[4];
@@ -46,11 +46,17 @@ int ordena_numeros(int x[]){
 
     }
 
-    aux[0] = (char) menor;
-    aux[1] = (char) meio;
-    aux[2] = (char) maior;
+    aux[0] = '0' + menor;
+    aux[1] = '0' + meio;
+    aux[2] = '0' + maior;
     aux[3] = '\0';
 
     return atoi(aux);
+
+}
+
+int verifica_iguais(const int x[],const int y[]){
+
+    return (x[0] == y[0] && x[1] == y[1] && x[2] == y[2]);
 
 }

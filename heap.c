@@ -174,7 +174,7 @@ void define_prioridade(Nave *pri, int x1, int x2){
     prioridade = (float)(prioridade * x);
 
 
-    if(!strcmp("Ambulância", pri -> tipo))
+    if(!strcmp("Ambulï¿½ncia", pri -> tipo))
         pri -> prioridade = floor(prioridade * 0.9);
     else if(!strcmp("Refugiados", pri -> tipo))
         pri -> prioridade = floor(prioridade * 0.8);

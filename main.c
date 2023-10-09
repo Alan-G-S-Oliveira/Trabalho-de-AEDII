@@ -5,7 +5,10 @@
 #include <windows.h>
 #include <time.h>
 #include "heap.h"
+#include "hash.h"
 #include "naves.h"
+
+const char suprimentos[][50] = {"Unhas postiças que desafiam a gravidade", "Brazinito", "Água intergaláctica", "Notebook", "Carne enlatada de unicórnio", "Objetos de latex sonoros"};
 
 int main(){
 
@@ -14,10 +17,14 @@ int main(){
 
     char linha[250];
     char aux[8];
-    int i, j, x1, x2, n, menu, prioridade;
+    int i, j, x1, x2, n, menu, prioridade, posicao, auxiliar[3];
     Lista *li;
     FILE *fi;
     Nave adc, consulta;
+    LISTA *hash[MAX];
+
+    for(i = 0; i < MAX; i++)
+        hash[i] = Cria_Lista();
 
     printf("Digite o tamanho da lista: ");
     scanf("%d", &n);
@@ -87,7 +94,7 @@ int main(){
                 do{
 
                     system("cls");
-                    printf("Digite o tipo da nave:\n1 - Ambul�ncia;\n2 - Refugiados;\n3 - Cargas;\n4 - Policial;\n5 - Viametro.\n");
+                    printf("Digite o tipo da nave:\n1 - Ambulância;\n2 - Refugiados;\n3 - Cargas;\n4 - Policial;\n5 - Viametro.\n");
                     scanf("%d", &n);
                     fflush(stdin);
 
@@ -96,7 +103,7 @@ int main(){
                 switch(n){
 
                     case 1:
-                        strcpy(adc.tipo, "Ambul�ncia");
+                        strcpy(adc.tipo, "Ambulância");
                         break;
                     case 2:
                         strcpy(adc.tipo, "Refugiados");
@@ -119,7 +126,7 @@ int main(){
                     corrige_string(adc.alien[i].nome);
                     fflush(stdin);
 
-                    printf("Digite a indentifica��o do passageiro %d: ", i + 1);
+                    printf("Digite a indentificação do passageiro %d: ", i + 1);
                     scanf("%d", &adc.alien[i].id);
                     fflush(stdin);
 
@@ -151,7 +158,7 @@ int main(){
                 if(adc_heap(li, adc))
                     printf("Nave adcionada com sucesso!\n");
                 else
-                    printf("N�o foi poss�vel adcionar a nave!\n");
+                    printf("Não foi possível adcionar a nave!\n");
 
                 break;
             case 2:
@@ -168,7 +175,7 @@ int main(){
                     define_prioridade(&consulta, x1, x2);
                     altera_prioridade(li, 0, consulta.prioridade);
 
-                    printf("Detectamos um erro no c�lculo da prioridade, portanto, n�o realizamos a remo��o da nave por quest�es de seguran�a.\n");
+                    printf("Detectamos um erro no cálculo da prioridade, portanto, não realizamos a remoção da nave por questões de segurança.\n");
 
                 }else{
 
@@ -178,7 +185,7 @@ int main(){
                     for(i = 0; i < 3; i++){
 
                         printf("Nome: %s.\nPlaneta de origem: %s.\n", consulta.alien[i].nome, consulta.alien[i].planeta);
-                        printf("Idade: %d.\nIdentifica��o: %d.\n\n", consulta.alien[i].idade, consulta.alien[i].id);
+                        printf("Idade: %d.\nIdentificação: %d.\n\n", consulta.alien[i].idade, consulta.alien[i].id);
 
                     }
 
@@ -186,11 +193,36 @@ int main(){
                     for(i = 0; i < 3; i++){
 
                         if(i < 2)
-                            printf("%s, ", consulta.suprimentos[i]);
+                            printf("%s, ", suprimentos[consulta.suprimentos[i]]);
                         else
-                            printf("%s", consulta.suprimentos[i]);
+                            printf("%s", suprimentos[consulta.suprimentos[i]]);
                     }
                     printf(".\n\n");
+
+                    auxiliar[0] = consulta.suprimentos[0];
+                    auxiliar[1] = consulta.suprimentos[1];
+                    auxiliar[2] = consulta.suprimentos[2];
+
+                    posicao = ordena_numeros(auxiliar);
+                    for(i = 0; i < hash[posicao] -> qtd; i++){
+
+                        if(verifica_iguais(auxiliar, hash[posicao] -> dados[i]))
+                            break;
+
+                    }
+                    if(i == hash[posicao] -> qtd){
+                        for(i = 0; i < 3; i++)
+                            hash[posicao] -> dados[hash[posicao] -> qtd][i] = auxiliar[i];
+
+                        hash[posicao] -> qtd++;
+                    }
+
+                    if(hash[posicao] -> qtd == 6){
+
+                        printf("A abertura da passagem vai se expandir!");
+                        system("pause");
+
+                    }
 
                 }
         }
