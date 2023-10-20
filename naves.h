@@ -1,6 +1,8 @@
 #ifndef NAVES_H_INCLUDED
 #define NAVES_H_INCLUDED
 
+extern const char suprimentos[][50];
+
 struct passageiro{
 
     int id;
@@ -25,6 +27,8 @@ typedef struct passageiro Passageiro;
 
 void corrige_string(char *str);
 
-void exibe_itens();
+void exibe_naves(Nave nave);
+
+void limpa_tela();
 
 #endif // NAVES_H_INCLUDED

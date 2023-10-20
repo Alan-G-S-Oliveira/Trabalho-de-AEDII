@@ -3,19 +3,44 @@
 
 #define MAX 346
 
+struct elemento{
+
+    int dados[3];
+    struct elemento *prox;
+
+};
+
 typedef struct{
 
+    struct elemento *inicio;
     int qtd;
-    int dados[6][3];
 
-} LISTA;
+} ListaEncadeada;
 
-LISTA *Cria_Lista();
+typedef struct{
 
-void Libera_Lista(LISTA *li);
+    ListaEncadeada *dados[MAX];
+
+} Hash;
+
+Hash *cria_hash();
+
+ListaEncadeada *cria_lista_encadeada();
+
+void libera_hash(Hash *hs);
+
+void libera_lista_encadeada(ListaEncadeada *li);
 
 int ordena_numeros(const int x[]);
 
-int verifica_iguais(const int x[],const int y[]);
+int adc_lista_encadeada(ListaEncadeada *li, int adc[]);
+
+int remove_lista_encadeada(ListaEncadeada *li);
+
+int adc_hash(Hash *hs, int adc[], int posicao);
+
+int remove_hash(Hash *hs, int posicao);
+
+int verifica_iguais(Hash *hs, int posicao, const int x[]);
 
 #endif // HASH_H_INCLUDED

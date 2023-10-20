@@ -8,8 +8,6 @@
 #include "hash.h"
 #include "naves.h"
 
-const char suprimentos[][50] = {"Unhas postiças que desafiam a gravidade", "Brazinito", "Água intergaláctica", "Notebook", "Carne enlatada de unicórnio", "Objetos de latex sonoros"};
-
 int main(){
 
     srand(time(NULL));
@@ -21,10 +19,9 @@ int main(){
     Lista *li;
     FILE *fi;
     Nave adc, consulta;
-    LISTA *hash[MAX];
+    Hash *hs;
 
-    for(i = 0; i < MAX; i++)
-        hash[i] = Cria_Lista();
+    hs = cria_hash();
 
     printf("Digite o tamanho da lista: ");
     scanf("%d", &n);
@@ -81,7 +78,7 @@ int main(){
         scanf("%d", &menu);
         fflush(stdin);
 
-        system("cls");
+        limpa_tela();
 
         switch(menu){
 
@@ -93,7 +90,7 @@ int main(){
 
                 do{
 
-                    system("cls");
+                    limpa_tela();
                     printf("Digite o tipo da nave:\n1 - Ambulância;\n2 - Refugiados;\n3 - Cargas;\n4 - Policial;\n5 - Viametro.\n");
                     scanf("%d", &n);
                     fflush(stdin);
@@ -143,18 +140,57 @@ int main(){
 
                 for(i = 0; i < 3; i++){
 
-                    printf("Digite 0 para ver a lista de suprimentos ou digite de 1 a 25 para adcionar o item: ");
+                    do{
+
+                    limpa_tela();
+                    printf("Adcione os itens:\n");
+                    printf("Digite:\n1 - Unhas postiças que desafiam a gravidade;\n2 - Brazinito;\n3 - Água intergaláctica;\n4 - Notebook;\n5 - Carne enlatada de unicórnio;\n6 - Objetos de latex sonoros.");
                     scanf("%d", &n);
                     fflush(stdin);
 
-                    if(n == 0)
-                        exibe_itens();
-                    //else
-                        //adc_itens(li, n);
+                    }while(n < 1 || n > 6);
 
+                    if(i == 0)
+                        adc.suprimentos[i] = n;
+                    if(i == 1){
+
+                        while(n == adc.suprimentos[0]){
+
+                            limpa_tela();
+                            printf("É proibido a entrada de intens iguais para preservar a economia desta parte da galáxia.\nAdcione os itens:\n");
+                            printf("Digite:\n1 - Unhas postiças que desafiam a gravidade;\n2 - Brazinito;\n3 - Água intergaláctica;\n4 - Notebook;\n5 - Carne enlatada de unicórnio;\n6 - Objetos de latex sonoros.");
+                            scanf("%d", &n);
+                            fflush(stdin);
+
+                        }
+
+                        if(n != adc.suprimentos[0])
+                            adc.suprimentos[i] = n;
+
+                    }
+                    if(i == 2){
+
+                        while(n == adc.suprimentos[0] || n == adc.suprimentos[1]){
+
+                            limpa_tela();
+                            printf("É proibido a entrada de intens iguais para preservar a economia desta parte da galáxia.\nAdcione os itens:\n");
+                            printf("Digite:\n1 - Unhas postiças que desafiam a gravidade;\n2 - Brazinito;\n3 - Água intergaláctica;\n4 - Notebook;\n5 - Carne enlatada de unicórnio;\n6 - Objetos de latex sonoros.");
+                            scanf("%d", &n);
+                            fflush(stdin);
+
+                        }
+
+                        if(n != adc.suprimentos[0])
+                            adc.suprimentos[i] = n;
+
+                    }
                 }
 
+                x1 = (rand() % 5) + 1;
+                x2 = (rand() % 5) + 1;
+                define_prioridade(&adc, x1, x2);
 
+                limpa_tela();
                 if(adc_heap(li, adc))
                     printf("Nave adcionada com sucesso!\n");
                 else
@@ -165,7 +201,12 @@ int main(){
 
                 n = rand() % 10;
 
-                consulta_heap(li, &consulta);
+                if(!consulta_heap(li, &consulta)){
+
+                    printf("A fila de naves está vazia!\n");
+                    break;
+
+                }
 
                 if(n == 0){
 
@@ -175,61 +216,48 @@ int main(){
                     define_prioridade(&consulta, x1, x2);
                     altera_prioridade(li, 0, consulta.prioridade);
 
-                    printf("Detectamos um erro no cálculo da prioridade, portanto, não realizamos a remoção da nave por questões de segurança.\n");
+                    printf("Detectamos um erro no cálculo da prioridade, portanto, não realizaremos a remoção da nave por questões de segurança.\n");
 
                 }else{
 
                     remove_heap(li);
-                    printf("Nome da nave: %s.\nTipo da nave: %s.\nPrioridade da nave: %d.\n", consulta.nome, consulta.tipo, consulta.prioridade);
-                    printf("\nPassageiros:\n");
-                    for(i = 0; i < 3; i++){
-
-                        printf("Nome: %s.\nPlaneta de origem: %s.\n", consulta.alien[i].nome, consulta.alien[i].planeta);
-                        printf("Idade: %d.\nIdentificação: %d.\n\n", consulta.alien[i].idade, consulta.alien[i].id);
-
-                    }
-
-                    printf("Suprimentos: ");
-                    for(i = 0; i < 3; i++){
-
-                        if(i < 2)
-                            printf("%s, ", suprimentos[consulta.suprimentos[i]]);
-                        else
-                            printf("%s", suprimentos[consulta.suprimentos[i]]);
-                    }
-                    printf(".\n\n");
+                    exibe_naves(consulta);
 
                     auxiliar[0] = consulta.suprimentos[0];
                     auxiliar[1] = consulta.suprimentos[1];
                     auxiliar[2] = consulta.suprimentos[2];
 
                     posicao = ordena_numeros(auxiliar);
-                    for(i = 0; i < hash[posicao] -> qtd; i++){
 
-                        if(verifica_iguais(auxiliar, hash[posicao] -> dados[i]))
-                            break;
+                    if(!verifica_iguais(hs, posicao, auxiliar))
+                        adc_hash(hs, auxiliar, posicao);
 
-                    }
-                    if(i == hash[posicao] -> qtd){
-                        for(i = 0; i < 3; i++)
-                            hash[posicao] -> dados[hash[posicao] -> qtd][i] = auxiliar[i];
+                    if(hs -> dados[posicao] -> qtd == 6){
 
-                        hash[posicao] -> qtd++;
-                    }
+                        Sleep(3000);
+                        printf("A abertura da passagem vai se expandir!\n\n");
 
-                    if(hash[posicao] -> qtd == 6){
+                        for(i = 0; i < 5; i++){
 
-                        printf("A abertura da passagem vai se expandir!");
-                        system("pause");
+                            Sleep(2000);
+                            printf("Nave %d:\n\n\n", i + 1);
+                            consulta_heap(li, &consulta);
+                            remove_heap(li);
+                            remove_hash(hs, posicao);
+                            exibe_naves(consulta);
+
+                        }
 
                     }
 
                 }
+
         }
 
     }while(menu != 3);
 
     apaga_lista(li);
+    libera_hash(hs);
     fclose(fi);
 
     for(i = 0; i < 3; i++){
@@ -240,7 +268,7 @@ int main(){
             sleep(1);
 
         }
-        system("cls");
+        limpa_tela();
     }
 
     return 0;

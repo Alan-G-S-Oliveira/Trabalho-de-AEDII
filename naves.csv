@@ -8,7 +8,7 @@ H-IIA,Cargas,Ogrindor,62184,92,Vega d,Orgrim,62133,419,Sargas d,Zandor,78901,415
 Long March 5,Policial,Nylthor,45023,162,Canopus c,Nixar,45056,188,Rigel c,Xyrlak,45678,180,Sargas a,3,0,1
 Delta IV,Refugiados,Mordix,76312,448,Arcturus b,Marlix,76324,53,Vega e,Thralkor,89012,65,Altair c,1,0,2
 Atlas V,Ambulância,Liriana,89034,420,Sirius c,Lixara,89065,479,Polaris c,Vexlon,34567,309,Alphard f,4,3,2
-Vega,Viametro,Kryzoth,12349,183,Antares a,Krazar,12376,236,Alphard f,Zolgrin,90123,473,Gacrux f,2,0,3
+Vega,Viametro,Kryzoth,12349,183,Antares a,Krazar,12376,236,Alphard f,Zolgrin,90123,473,Gacrux f,2,0,5
 Falcon Heavy,Cargas,Jarnok,67890,276,Rigel b,Jorlak,67882,97,Hadar b,Myrnix,56789,82,Rigel a,1,0,3
 Proton,Ambulância,Hylthar,54321,394,Deneb d,Hyndor,54398,311,Proxima Centauri c,Qyldor,43210,261,Canopus a,4,2,3
 Starship,Policial,Grivlak,98765,60,Altair e,Glorix,98723,161,Alpha Centauri b,Zylnor,87654,57,Bellatrix a,0,3,1
@@ -31,11 +31,11 @@ Falcon 5,Policial,Myrlok,12789,269,Achernar d,Mylara,12709,366,Castor d,Jylnar,9
 GSLV Mk II,Ambulância,Kryndon,87601,88,Alnilam b,Kryndor,87612,21,Sargas e,Vylor,23458,62,Sirius a,2,5,3
 Electron II,Cargas,Jorvax,90345,401,Mintaka b,Jornix,90326,307,Deneb d,Krandor,67892,276,Sargas f,0,1,3
 H-I,Viametro,Ithril,67856,113,Capella a,Ithran,67821,195,Alpha Centauri c,Xyntar,54323,499,Achernar f,1,2,3
-Long March 3B,Refugiados,Horkal,34521,98,Rigel b,Hylara,34567,292,Proxima Centauri f,Zandor,87656,137,Hamal c,5,4,0
+Long March 3B,Refugiados,Horkal,34521,98,Rigel b,Hylara,34567,292,Proxima Centauri f,Zandor,87656,137,Hamal c,5,0,2
 New Glenn,Policial,Gryndor,67809,226,Vega c,Gryndak,67823,112,Bellatrix f,Mylorn,21000,327,Castor f,1,3,2
 Vega C,Cargas,Fyndar,89021,146,Polaris b,Fyndra,89094,484,Alphard d,Zyndal,34569,73,Alphard e,0,2,4
 Ariane 4,Ambulância,Exynor,54390,61,Polaris b,Exylor,54367,36,Arcturus f,Zylorn,78903,285,Deneb a,1,2,5
-PSLV-XL,Viametro,Dylara,90872,282,Algieba a,Dylara,90865,251,Sirius d,Tylnor,12348,89,Hamal e,4,5,2
+PSLV-XL,Viametro,Dylara,90872,282,Algieba a,Dylara,90865,251,Sirius d,Tylnor,12348,89,Hamal e,2,5,0
 Tardis,Refugiados,Bustas,10987,441,Sargas c,Job,10902,415,Rigel c,Leandro,56792,220,Polaris f,1,0,4
 Soyuz 2,Cargas,Braxor,56723,491,Aldebaran b,Bralix,56710,180,Sirius c,Vykarn,90126,389,Rigel a,5,3,2
 Zenit-3SL,Policial,Arlynd,43210,22,Aldebaran b,Arlox,43223,401,Sargas e,Xyrdok,23459,171,Capella c,4,5,0
@@ -46,6 +46,6 @@ Proton-M,Policial,Tylorin,21098,158,Canopus e,Tryndor,21013,133,Alpha Centauri c
 GSLV Mk I,Ambulância,Slyndar,78906,284,Hadar a,Sylara,78967,469,Alnilam c,Tyndra,34570,347,Alpha Centauri f,1,0,5
 Long March 4B,Refugiados,Rythor,56789,495,Alphard d,Rynak,56778,242,Betelgeuse f,Kryndar,78904,206,Zubeneschamali f,4,2,1
 Vega E,Viametro,Pylar,34567,52,Alphard e,Pylor,34529,127,Alphard f,Vorkal,12349,431,Sirius f,3,5,4
-Ariane 3,Cargas,Nythara,87654,492,Alpha Centauri a,Nythar,87645,34,Vega c,Zolthar,56793,67,Alphard e,0,5,4
+Ariane 3,Cargas,Nythara,87654,492,Alpha Centauri a,Nythar,87645,34,Vega c,Zolthar,56793,67,Alphard e,0,5,2
 Vulcan Centaur,Policial,Myndok,13345,311,Betelgeuse f,Myndor,12360,312,Hamal b,Plandor,90127,309,Spica f,1,3,5
 Titan IV,Refugiados,Kyndal,67891,231,Canopus b,Kyndra,67889,173,Spica c,Zandar,23460,93,Arcturus a,4,1,0
