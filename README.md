@@ -1,2 +1,1 @@
-# Heap Binaria
- Fila de Prioridades utilizando uma Heap Binária para o trabalho de Algoritmos e Estruturas de Dados II.  
+Trabalho para a disciplina de AED II que consiste na implementação de uma heap binária e uma tabela hash.
